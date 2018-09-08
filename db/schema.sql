@@ -1,10 +1,13 @@
-CREATE DATABASE moviePlannerDB;
-use moviePlannerDB;
+DROP DATABASE IF EXISTS burgers_db;
+CREATE DATABASE burgers_db;
+use burgers_db;
 
-CREATE TABLE movies (
+CREATE TABLE burgers (
 	id int AUTO_INCREMENT,
-	name varchar(30) NOT NULL,
+    burger_name varchar(30)  NULL,
+    devoured boolean NULL,
 	PRIMARY KEY(id)
 );
 
-INSERT INTO movies (movie) VALUES ('Movie');
+
+
